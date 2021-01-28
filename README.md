@@ -4,6 +4,6 @@ Ceci est mon tout premier projet.
 
 
 
-IMPORTANT : Les images utilisées appartiennent à leurs auteurs. Nous déclinons tous droits les concernants.
+IMPORTANT : Les images utilisées appartiennent à leur auteur. Nous déclinons tous droits les concernants.
 (Cependant, le code nous appartient, merci de ne pas plagier)
 
