@@ -1,5 +1,5 @@
 # ultimate-escape
-Site web réalisé dans le cadre d'un projet scolaire (en binôme). Le but étant de respecter les demandes du client, tout en faisant appel à la créativité. 
+Site web réalisé dans le cadre d'un projet scolaire (en binôme). Le but étant de respecter les demandes du client, tout en faisant appel à la créativité. </br>
 Ceci est mon tout premier projet.
 
 
