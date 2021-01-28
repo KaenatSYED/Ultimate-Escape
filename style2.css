@@ -1,0 +1,1028 @@
+/*************************** PAGE MAIN ************************/
+a {color: white;}
+a:hover {color: #951f33;}
+/*********************ENTETE DE LA PAGE ************************/
+html {background-color: black;}
+#font p, h1,h2, h5 {color: white;
+			font-family: "Gil Sans", sans-serif;
+			font-size: 18px;}
+#font a {color: white;}
+#font a:hover {color: #951f33;}
+.couleurréseau {color: white; font-size: 19px;}
+#logo /*la taille du logo, qui servira à revenir sur la page d'accueil*/
+{width: 15em; height: 10em;}
+
+.contact { display: block; left:0; top: 0; color: white; }
+
+
+/*MENU*/
+/* Le contenu du menu = les liens  */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #951f33; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Le bouton Menu */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #951f33;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/***********************CORPS DE LA PAGE***************************/
+/* image de présentation = banner1 */
+.containerMain {
+  position: relative;
+  padding: 1em;
+}
+
+/* top right text */
+.text-block1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: grey;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 20px;
+  opacity: 0.7;
+}
+.text-block2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 20px;
+  width: 50%;
+  opacity: 0.8;
+}
+/**** slideshow *****/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  float: left;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  left: 1em;
+  font-family: "Gil Sans", sans-serif;
+  text-align: center;
+}
+/*taille des images*/
+.slide{ width: 40em; height: 30em; border-radius: 5px; }
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/** où nous trouver */
+.plan{font-size: 26px;}
+
+/*qu'est-ce qu'un escape*/
+.escape {color: #951f33; font-size:3em;}
+.game {width: 100%; -webkit-filter: grayscale(100%);;
+		filter: grayscale(100%);}
+
+/**********************FIN DE PAGE ACCUEIL***********************/
+/* réseaux sociaux*/
+#RS img { width: 2em; height: 2em;}
+.stopFloat {clear: both;}
+li {display: inline; text-align: middle;}
+.centerTXT {text-align: center; padding: 1em }
+.centerIMG {display: block; margin-left: auto; margin-right: auto;}
+.textalign {text-align: center;}
+.contacter {display: block; right: 0; bottom: 0; color: white; font-size: 19px;}
+.copyright {color: white; font-family: "Gil Sans", sans-serif;
+	font-size: 16px;}
+/**** NEWSLETTER *****/
+/* Add some padding and a grey background color to containers */
+.containerNL {
+  border-radius: 5px;
+  padding: 15px;
+  width: 45%;
+  background-color: darkgrey ;
+  column-count: 2;
+  float: left;
+  font-size: 16px;
+}
+/* Style the input elements and the submit button */
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+.abonner {
+  background-color: #951f33;
+  color: white;
+  border: 2em;
+  border-radius: 5px;
+  width: 50%;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 16px;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+/* COMMENTAIRES*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family:"Gil Sans", sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+.commenter {
+  background-color: #951f33;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.containerCom {
+  border-radius: 5px;
+  padding: 15px;
+  width: 45%;
+  background-color: darkgrey ;
+  column-count: 2;
+  float: right;
+  font-size: 19px;
+}
+
+
+/***************** Page Nos Missions *******************/
+
+/*******Fond de Page ********/
+#fondimage{
+    background-color: black;
+    scroll-behavior: smooth; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /*******Couleur et Taille des Sections ********/
+  #section {
+    
+    margin-top: 90px;
+    height: 400px;
+    background-color:#dabec2bd;
+  }
+
+  #sectionpandemie {
+    margin-top: 90px;
+    margin-bottom: 0px;
+    height: 400px;
+    background-color:#dabec2bd;
+
+  }
+
+
+  
+  body { 
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+  /*******En tête Nos Missions ********/    
+   #header {
+        background-color: hsla(351, 27%, 80%, 0.774);
+        padding: 20px 10px;
+        color: black;
+        text-align: center;
+        font-size: 30px; 
+        font-weight: bold;
+        position: fixed;
+        top: 168px;
+        width: 100%;
+        transition: 0.2s;
+        opacity: 0,2;
+        font-family: "fangsong";
+        
+      }
+  #footermission{
+      margin-top: 30px;
+      margin-bottom: 10px;
+  }
+  /*******Hover des images ********/
+  
+  .ombre:hover {
+    -ms-transform: scale(1.05); 
+    -webkit-transform: scale(1.05); 
+    transform: scale(1.05); 
+  
+  }
+  
+  .adroite:hover {
+    -ms-transform: scale(1.05); 
+    -webkit-transform: scale(1.05); 
+    transform: scale(1.05); 
+  
+  }
+  
+  /*******Ombre des images ********/
+  
+  .adroite {
+    position: absolute;
+    right:0px;
+    box-shadow: 10px 10px 10px 10px black;
+    width: auto;
+    height: 400px;
+  }
+  
+  .ombre {box-shadow: 5px 5px 8px black;
+    width: auto;
+    height: 400px;}  
+  
+  /******* Dimension et ombres des images de dificulté ********/
+  
+  .dimensiondiff{
+    width: auto;
+    height: 81px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 39px 8px rgba(0, 0, 0, 0.411);
+  }
+  
+  .dimensiondiff:hover {
+    -ms-transform: scale(1.05); 
+    -webkit-transform: scale(1.05); 
+    transform: scale(1.05); 
+  
+  }/*******Collapsible numéro 1 ********/
+  
+  .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 12px;
+      width: 756px;
+      border: 2em;
+      text-align: center;
+      outline: none;
+      font-size: 30px;
+      position: absolute;
+      top: 325px; left: 650px;
+      font-family: Chalkduster, fantasy;
+      border-radius: 10px;
+      
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .content2 {
+      padding: 12px 18px;
+      display: none;
+      overflow: hidden;
+      background-color: lightgrey;
+      width:756px;
+      position: absolute;
+      top: 388px; left: 650px;
+      font: italic 1.2em "Fira Sans", serif;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 18px;
+  
+    }
+  
+  /******* Collapsible numéro 2 ********/
+  
+  .collapsible2 {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 756px;
+    border: 2em;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    position: absolute;
+    top: 800px; right: 650px;
+    font-family: Chalkduster, fantasy;
+    border-radius: 10px;
+    
+  }
+  
+  .active, .collapsible2:hover {
+    background-color: #555;
+  }
+  
+  .content3 {
+    padding: 12px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: lightgrey;
+    width: 756px;
+    position: absolute;
+    top: 863px; right: 650px;
+    font: italic 1.2em "Fira Sans", serif;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 18px;
+  
+  }
+  
+  /******* Collapsible numéro 3 ********/
+  
+  .collapsible3 {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 756px;
+    border: 2em;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    position: absolute;
+    top: 1295px; left: 650px;
+    font-family: Chalkduster, fantasy;
+    border-radius: 10px;
+    
+  }
+  
+  .active, .collapsible3:hover {
+    background-color: #555;
+  }
+  
+  .content4 {
+    padding: 12px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: lightgrey;
+    width: 756px;
+    position: absolute;
+    top: 1358px; left: 650px;
+    font: italic 1.2em "Fira Sans", serif;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 18px;
+  
+  }
+  
+  /******* Collapsible numéro 4 ********/
+  
+  .collapsible4 {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 756px;
+    border: 2em;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    position: absolute;
+    top: 1780px; right: 650px;
+    font-family: Chalkduster, fantasy;
+    border-radius: 10px;
+    
+  }
+  
+  .active, .collapsible4:hover {
+    background-color: #555;
+  }
+  
+  .content5 {
+    padding: 12px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: lightgrey;
+    width: 756px;
+    position: absolute;
+    top: 1843px; right: 650px;
+    font: italic 1.2em "Fira Sans", serif;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 18px;
+  
+  }
+  
+  /******* Collapsible numéro 5 ********/
+  
+  .collapsible5 {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 756px;
+    border: 2em;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    position: absolute;
+    top: 2275px; left: 650px;
+    font-family: Chalkduster, fantasy;
+    border-radius: 10px;
+    
+  }
+  
+  .active, .collapsible5:hover {
+    background-color: #555;
+  }
+  
+  .content6 {
+    padding: 12px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: lightgrey;
+    width: 756px;
+    position: absolute;
+    top: 2338px; left: 650px;
+    font: italic 1.2em "Fira Sans", serif;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 18px;
+  
+  }
+  /******* Collapsible numéro 6 ********/
+  
+  .collapsible6 {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 756px;
+    border: 2em;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    position: absolute;
+    top: 2765px; right: 650px;
+    font-family: Chalkduster, fantasy;
+    border-radius: 10px;
+    
+  }
+  
+  .active, .collapsible6:hover {
+    background-color: #555;
+  }
+  
+  .content7 {
+    padding: 12px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: lightgrey;
+    width: 756px;
+    position: absolute;
+    top: 2828px; right: 650px;
+    font: italic 1.2em "Fira Sans", serif;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 18px;
+  
+  }
+  
+  /***************** Page Tarifs *******************/
+  
+  #partiephoto {
+    background-color: white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 700px;
+  
+  }
+  
+  #partiephoto h1 {
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .texteavantcarte {color: black;
+  margin-bottom: 20px;}
+  
+  #partiephoto h1:hover {
+    background-color: #951f3162;
+  }
+  
+  #carte1 {
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 50px;
+    color:white;
+    text-align: center;
+  }
+  
+  #carte2 {
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    border-radius: 5px;
+    color:white;
+    text-align: center;
+    
+  }
+  
+  #carte3 {
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 50px;
+    color:white;
+    text-align: center;
+  
+  }
+  
+  #carte4 {
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 50px;
+    color:white;
+    text-align: center;
+  
+  }
+  
+  #carte5 {
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 50px;
+    color:white;
+    text-align: center;
+  
+  }
+  
+  #carte6 {
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-top: 50px;
+    color:white;
+    text-align: center;
+  
+  }
+  
+  #titrehaut1 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 477px; left: 1000px;
+  
+  }
+  
+  #textemilieu1 {
+    color:black;
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 539px; left: 1000px;
+  
+  
+  }
+  
+  #boutonréserver1 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 627px; left: 1000px;
+  }
+  
+  
+  
+  #titrehaut2 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 477px; left: 575px;
+  
+  }
+  
+  #textemilieu2 {
+    color:black;
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 539px; left: 575px;
+  
+  }
+  
+  #boutonréserver2 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0#951f31;
+    position: absolute;
+    top: 627px; left: 575px;
+  }
+  
+  #titrehaut3 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 479px; right: 1000px;
+  
+  }
+  
+  #textemilieu3 {
+    color:black;
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 2px 24px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 539px; right: 1000px;
+  
+  }
+  
+  #boutonréserver3 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top:627px; right: 1000px;
+  }
+  
+  
+  #titrehaut4 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 753px; left: 1000px;
+  
+  }
+  
+  #textemilieu4 {
+    color:black;
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 815px; left: 1000px;
+  
+  }
+  
+  #boutonréserver4 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 888px; left: 1000px;
+  }
+  
+  #titrehaut5 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 753px; left: 575px;
+  
+  }
+  
+  #textemilieu5 {
+    color:black;
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 815px; left: 575px;
+  
+  }
+  
+  #boutonréserver5 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 888px; left: 575px;
+  }
+  
+  #titrehaut6 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top:753px; right: 1000px;
+  
+  }
+  
+  #textemilieu6 {
+    color:black;
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top:815px; right: 1000px;
+  
+  }
+  
+  #boutonréserver6 {
+    color:white;
+    width: 250px;
+    background-color: #951f31;
+    padding: 2px 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #951f31;
+    position: absolute;
+    top: 888px; right: 1000px;
+  }
+  
+  #imgevgtarifs {width: 250px;
+  height: auto;
+  position: relative;
+  right:16px}
+
+  .boutonreserve {
+      background-color: #951f31;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 20px;
+      font-family: Impact;
+      margin: 4px 2px;
+      opacity: 0.3;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+  .boutonreserve:hover {opacity: 1;
+    color: white;}
+
+  .boutonreserve:link 
+    { 
+     text-decoration:none; 
+     color: white;
+    } 
+.btnr:hover{
+  opacity: 1;
+    color: white;
+}
+#btnmission{
+  text-decoration: none;
+  color: white;
+  position: sticky;
+  left: 125px;
+  background-image: url(bandemission.jpeg);
+  background-position-x: center;
+  width: 1200px;
+  height:300px;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  font-size: 30px;
+  font-family: monospace;
+}
+  
+#hp{
+  position: absolute;
+  height: 810px;
+  width: auto;
+}
+
+#fondtarif{
+  height: 2000px
+}
+
+#footertarifs{
+  position: absolute;
+  top: 1900px;
+}
+
+/*****************Page Team Building******************/
+.wiki {color: black;}
+.wiki: hover {color: #951f33;}
+video {
+  height: 200px;
+  position: absolute;
+  top: 300px;
+  left:0px;
+  background-color: rgba(163, 105, 101, 0.801);
+  padding-left: 230px;
+  padding-right: 210px;
+}
+
+#part1tb {
+  background-color: white;
+  position: relative;
+  top:200px;
+  text-align: center;
+  padding:20px;
+  font-size: 20px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+#team{
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Segoe UI';
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  position: relative;
+  top: 200px;
+  left: 447px;
+  color: white;
+}
+#part2tb{
+  background-color: rgba(197, 125, 112, 0.856);
+  height: 750px;
+
+}
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.575);
+}
+
+.container0 {
+  padding: 2px 16px;
+  background-color: whitesmoke;
+  color: #951f33;
+  font-size: 25px;
+  text-align: center;
+}
+
+#part3tb{
+  background-image: url(fondblanc.jpg);
+  position: relative; 
+  margin-top: 0px;
+}
+#cont{
+  color:black;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+  font-family: serif;
+}
+
+#imgtel{
+width: 50px;
+height: auto;
+position: relative;
+left: 50%;
+
+}
+
+#part4tb{
+  background-color: burlywood;
+}
+
+#cont2{
+  margin-top: 0;
+  padding:25px;
+  color:black;
+  text-align: center;
+  font-family:Tahoma sans-serif;
+  font-size: 19px;
+}

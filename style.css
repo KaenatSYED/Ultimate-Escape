@@ -1,0 +1,478 @@
+/*************************** PAGE MAIN ************************/
+/*********************ENTETE DE LA PAGE ************************/
+html {background-color: black;}
+p, h1,h2, h5 {color: white;
+			font-family: "Gil Sans", sans-serif;
+			font-size: 19px;}
+a {color: white;}
+a:hover {color: #951f33;}
+
+#logo /*la taille du logo, qui servira à revenir sur la page d'accueil*/
+{width: 15em; height: 10em;}
+
+.contact { display: block; left:0; top: 0; color: white; }
+
+
+/*MENU*/
+/* Le contenu du menu = les liens  */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #951f33; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Le bouton Menu */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #951f33;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/***********************CORPS DE LA PAGE***************************/
+/* image de présentation = banner1 */
+.containerMain {
+  position: relative;
+  padding: 1em;
+}
+
+/* top right text */
+.text-block1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: grey;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 20px;
+  opacity: 0.7;
+}
+.text-block2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 20px;
+  width: 50%;
+  opacity: 0.8;
+}
+/**** slideshow *****/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  float: left;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  left: 1em;
+  font-family: "Gil Sans", sans-serif;
+  text-align: center;
+}
+/*taille des images*/
+.slide{ width: 40em; height: 30em; border-radius: 5px; }
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/** où nous trouver */
+.plan{font-size: 26px;}
+
+/*qu'est-ce qu'un escape*/
+.escape {color: #951f33; font-size:3em;}
+.game {width: 100%; -webkit-filter: grayscale(100%;);
+		filter: grayscale(100%);}
+
+/**********************FIN DE PAGE ACCUEIL***********************/
+/* réseaux sociaux*/
+#RS img { width: 2em; height: 2em;}
+.stopFloat {clear: both;}
+li {display: inline; text-align: middle;}
+.centerTXT {text-align: center; padding: 1em }
+.centerIMG {display: block; margin-left: auto; margin-right: auto;}
+.textalign {text-align: center;}
+.contacter {display: block; right: 0; bottom: 0;}
+.copyright {color: white; font-family: "Gil Sans", sans-serif;
+	font-size: 16px;}
+/**** NEWSLETTER *****/
+/* Add some padding and a grey background color to containers */
+.containerNL {
+  border-radius: 5px;
+  padding: 15px;
+  width: 45%;
+  background-color: darkgrey ;
+  column-count: 2;
+  float: left;
+}
+/* Style the input elements and the submit button */
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+.abonner {
+  background-color: #951f33;
+  color: white;
+  border: 2em;
+  border-radius: 5px;
+  width: 50%;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 16px;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+/* COMMENTAIRES*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family:"Gil Sans", sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+.commenter {
+  background-color: #951f33;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.containerCom {
+  border-radius: 5px;
+  padding: 15px;
+  width: 45%;
+  background-color: darkgrey ;
+  column-count: 2;
+  float: right;
+}
+
+/********************** PAGE INFOS PRATIQUE **********************/
+.infoesc {width: 100%; filter:grayscale(100%);}
+.present { font-size: 22px; text-align: center; color: darkgrey;}
+/*****AVIS DES CLIENTS*******/
+/* Slideshow container */
+.containerAvis {
+  position: relative;
+  right:0;
+  background: white;
+  width: 50%;
+  margin-right: auto;
+  margin-left: 3em;
+  float: left;
+  margin-top: 5em;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q, h4 {font-style: italic; font-family: "Gil Sans", sans-serif;}
+
+.etoiles {width: 10em; display: block; 
+		  margin-right: auto;margin-left: auto; padding: 1em}
+/********************** PAGE RESERVER ***********************/
+/*PROMO*/
+.coupon {
+  border: 5px dotted #bbb; /* Dotted border */
+  width: 25%;
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  max-width: 30%;
+
+  }
+
+.aligner {display: flex;
+  justify-content: space-around;}
+
+.containerRes {
+  padding: 2px 16px;
+  background-color: #951f33;
+  color: white;
+  width: 100%;
+}
+
+.promo {
+  background: darkgrey;
+  padding: 3px;
+  font-size: 19px;
+}
+
+.expire {
+  color: #b30e4c;
+}
+/***** HORAIRE COMPLET / PLACE DISPO *****/
+.jour{ color: white; font-size: 26px; }
+.selectJour {display: flex; justify-content: center; width: 20em;
+	background-color: lightgrey;}
+.col {column-count: 4}
+
+/* Float four columns side by side */
+.column{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 60%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px; padding-top: 1em; padding-bottom: 2em;
+	display: flex; flex-flow: column; }
+
+/* Clear floats after the columns */
+
+
+/* Style the counter cards */
+.cardfull {
+  padding: 1em;
+  text-align: center;
+  border: 1px solid darkgrey;
+  background-color: black;
+  color: white;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 18px;
+}
+
+.cardless {
+  padding: 1em;
+  text-align: center;
+  border: 1px solid darkgrey;
+  background-color: #951f33;
+  color: white;
+  font-family: "Gil Sans", sans-serif;
+  font-size: 18px;
+}
+.cardless:hover {opacity: 0.4}
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/****** PROCEDER AU PAIEMENT ******/
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+.col-25
+.col-50,
+.col-75 {
+  padding: 0 1em;
+}
+
+.containerReserver {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey;
+  padding: 25px 25px 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  column-count: 2;
+}
+
+ input[type=text], select {
+  width: 50%;
+  margin-bottom: 8px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label, h3{
+  margin-bottom: 10px;
+  display: block;
+  font-family: "Gil Sans", sans-serif;
+  padding: 6px;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon-container {
+  width: 12em;
+}
+
+.btn {
+  background-color: #951f33;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  display: block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  
+}
+
+.btn:hover {
+  background-color: #951f31;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide,
+ make the two columns stack on top of each other instead of 
+ next to each other (and change the direction - 
+ make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
