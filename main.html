@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href ="style.css"/>
+
+
+	<!-- HEADER-->
+<header>
+	<title>Ultimate Escape</title>
+	<h3 class="contact"> NOUS CONTACTER : </br><a href="#">01.02.03.04.05</a></h3>
+<!---Le logo + lien hypertexte pour revenir page accueil--->
+	<a href="main.html" title="Revenir sur la page d'accueil"><img src="logo.png" alt="le logo" id ="logo" class="centerIMG" /></a>
+	<!-- NAV -->
+<nav>
+	<!-- MENU-->
+	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="nosmissions.html" title="Nos missions">Nos missions</a>
+  <a href="reserver1.html" title="Réserver">Réserver</a>
+  <a href="tarifs.html" title="Les Tarifs">Tarifs</a>
+  <a href="teambuilding.html" title="Team building !">Team building</a>
+  <a href="infospratique.html" title="Infos pratique">Infos Pratique</a>
+	</div>
+
+	<div id="main">
+  	<button class="openbtn" onclick="openNav()">&#9776;Menu</button>
+	</div>
+</nav>
+</header>
+</head>
+
+<body>
+<section>
+<!-- BANNER-->
+<div class="containerMain">
+  <img src="banner1.jpg" alt="Banner1" style="width:100%;"/>
+  <div class="text-block1">
+    <h4>Info COVID-19</h4>
+    <p>Suite aux annonces gouvernementales, le centre Ultimate Escape et son antenne à <a href="#" title="Retrouvez notre antenne">Aix-en-Provences</a> rouvriront le 21 janvier 2021. <strong>Prenez soin de vous !</strong> Pour les entreprises, nous proposons des teambuildings digitaux jusqu'à 200 personnes. Pour les particuliers, découvrez notre Escape Game familial à imprimer.</p>
+    </div>
+   <div class="text-block2">
+   	<p><strong>UNE ACTIVITÉ POUR TOUS: DE PETITS À GRANDS, POUR LES PARTICULIERS ET LES ENTREPRISES, DE TOUS ÂGES !</strong></br>
+		En famille ou entre amis, pour des anniversaires, EVG/EVJF, séminaires, teambuildings, vivez une expériences insolite et hors du commun !</br>
+		Ultimate Escape développe aussi un large panel de services et prestations sur mesure pour les entreprises (teambuildings, séminaires, escape game géants...) et les particuliers (anniversaires, soirées privées, EVG/EVJF, battles...), aussi n'hésitez pas à prendre contact ou à nous appeler pour nous présenter vos besoins !
+	</p>
+	</div>
+</div>
+<!-- slideshow-->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="5ans.jpg" class="slide" style="filter: grayscale(100%);">
+    <div class="text">Nous fêtons les 5 ans d'Ultimate Escape !</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="merci.png" class="slide">
+    <div class="text"> Merci pour votre fidélité et confiance!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="gallery.png" class="slide">
+    <div class="text">Notre galerie photos, pour 
+    immortaliser ces moments !</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div>
+	<h1 class="textalign plan">Où nous trouver ?</h1>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.8801366842354!2d5.424841115477926!3d43.274886884828874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9b8d24670ae0f%3A0x5ab9791fa4b46efe!2s23%20Rue%20de%20l&#39;Escalon%2C%2013010%20Marseille!5e0!3m2!1sfr!2sfr!4v1610635461554!5m2!1sfr!2sfr" width="600" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!--qu'est-ce qu'un escape ?-->
+<div class="stopFloat">
+<h1 class="escape centerTXT"> Qu'est-ce qu'un Escape Game ?</h1>
+<img src="escape.png" alt="qu'est-ce qu'un escape game" class="game"/>
+</div>
+</section>
+   
+
+
+
+<!-- Footer -->
+<!------Présentation de fin de page ------->
+<footer id="footer">
+<!-- NEWSLETTER-->
+	<form action="#">
+  <div class="containerNL" id="newsletters">
+    <h2>Abonnez-vous à notre Newsletter</h2>
+    <p>Ça bouge chez Ultimate Escape ! Inscrivez-vous à notre newsletter pour recevoir toutes nos actualités : les nouveaux jeux, les nouveaux concepts, les nouvelles prestations et les offres promoti!</p>
+    <input type="text" placeholder="Nom" name="name" required>
+    <input type="text" placeholder="Email" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> J’accepte de recevoir cette newsletter et je comprends que je peux me désabonner facilement à tout moment.
+    </label>
+  
+    <input type="submit" value="S'abonner" class="abonner">
+  </div>
+</form>
+<!-- COMMENTAIRES-->
+<div class="containerCom">
+  <form action="#">
+<h2>Commentez !</h2>
+    <label for="fname">Pseudo</label>
+    <input type="text" id="fname" name="firstname" placeholder="Pseudo">
+
+    <label for="lname">Email</label>
+    <input type="text" name="mail" placeholder="Email">
+
+    <label for="subject">Commentaire</label>
+    <textarea  name="commentaire" placeholder="Écrivez un commentaire..." style="height:150px"></textarea>
+
+    <input type="submit" value="Envoyer" class="commenter">
+
+  </form>
+</div>
+</div>
+<!-- RESEAUX SOCIAUX-->
+<ul class="centerTXT stopFloat">
+<p>Nous suivre sur les réseaux</p>
+	<li><a href="rs.html" id="RS" title="accéder à notre Twitter" target="_blank"><img src="twitter.png" alt="logo Twitter"></a></li>
+
+	<li><a href="rs.html" id="RS" title="accéder à notre Facebook" target="_blank"><img src="fb.png" alt="logo Facebook"></a></li>
+
+	<a href="rs.html"id="RS" title="accéder à notre Instagram" target="_blank"><img src="instagram.png" alt="logo Instagram"></a></li>
+</ul>
+<p class="contacter"> Une question ? </br> Contactez-nous !</br><a href="#">01.02.03.04.05</a></br><a href="mailto:UltimateEscape@gmail.com">UltimateEscape@gmail.com</a></p>
+<div class="copyright textalign">
+	&copy; Ultimate Escape 2021 copyright | Site réalisé par: Amy et Kaenat | Images utilisées: proviennent toutes de <a href="https://google.com">Google</a>.
+</div>
+</footer>
+	<!-- Scripts -->
+			<script src="JAVA.js"></script>
+			
+
+</body>
+</html>
